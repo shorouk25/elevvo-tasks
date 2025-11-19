@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Personal Blog</h1>
+            <p>Exploring Tech, Travel, and Food</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search posts by title...">
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="All">All</button>
+                <button class="filter-btn" data-category="Tech">Tech</button>
+                <button class="filter-btn" data-category="Travel">Travel</button>
+                <button class="filter-btn" data-category="Food">Food</button>
+            </div>
+        </div>
+
+        <div id="postsContainer" class="posts-grid"></div>
+
+        <div class="pagination">
+            <button id="prevBtn" class="page-btn">Previous</button>
+            <span id="pageInfo" class="page-info"></span>
+            <button id="nextBtn" class="page-btn">Next</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Personal Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
