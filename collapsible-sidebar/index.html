@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Sidebar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="logo-container">
+            <div class="logo-placeholder">A</div>
+            <span class="logo-text">AppName</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#" class="nav-link active">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-text">Dashboard</span>
+            </a>
+            <a href="#" class="nav-link">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">Analytics</span>
+            </a>
+            <a href="#" class="nav-link">
+                <span class="nav-icon">📁</span>
+                <span class="nav-text">Projects</span>
+            </a>
+            <a href="#" class="nav-link">
+                <span class="nav-icon">⚙️</span>
+                <span class="nav-text">Settings</span>
+            </a>
+            <a href="#" class="nav-link">
+                <span class="nav-icon">👤</span>
+                <span class="nav-text">Profile</span>
+            </a>
+        </nav>
+    </aside>
+
+    <button class="toggle-btn" id="toggleBtn">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </button>
+
+    <main class="main-content" id="mainContent">
+        <div class="content-card">
+            <h1>Welcome to Your Dashboard</h1>
+            <p>This is a responsive collapsible sidebar example. Click the menu button to toggle the sidebar open and closed. The sidebar features smooth animations and works seamlessly on mobile devices.</p>
+            <p style="margin-top: 20px;">On mobile screens, the sidebar transforms into an overlay menu that appears on top of the content. Try resizing your browser window to see the responsive behavior in action!</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
